@@ -11,11 +11,11 @@ module.exports = (sequelize, Sequelize) => {
         type: Sequelize.STRING(255),
         allowNull: false,
       },
+      writer: {
+        type: Sequelize.STRING(50),
+      },
       comment: {
         type: Sequelize.TEXT(),
-      },
-      writer: {
-        type: Sequelize.STRING(20),
       },
       readnum: {
         type: Sequelize.INTEGER(11),
